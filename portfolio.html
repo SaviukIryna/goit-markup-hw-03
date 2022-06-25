@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -15,80 +15,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
+    <div class="container">
     <header class="header">
+        <div class="nav">
         <a class="logo" href="/"><span class="web">Web</span>studio</a>
-        <nav class="nav">
+        <nav>
             <ul class="navigation">
-                <li><a class="link" href="index.html">Студія</a></li>
-                <li><a class="link current" href="portfolio.html">Портфоліо</a></li>
-                <li><a class="link" href="#">Контакти</a></li>
+                <li class="item"><a class="link" href="index.html">Студія</a></li>
+                <li class="item"><a class="link current" href="portfolio.html">Портфоліо</a></li>
+                <li class="item"><a class="link" href="#">Контакти</a></li>
             </ul>
         </nav>
         <ul class="contacts">
-           <li> <a class="link-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+           <li class="item"> <a class="link-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
            </li>
-           <li>
+           <li class="item">
             <a class="link-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
+    </div>
     </header>
     <main>
-        <section>
+        <section class="section">
             <ul class="buttons">
-            <li><button class="content-button" type="button">Все</button></li>
-            <li><button class="content-button" type="button">Веб-сайти</button></li>
-            <li><button class="content-button" type="button">Додатки</button></li>
-            <li><button class="content-button" type="button">Дизайн</button></li>
-            <li><button class="content-button" type="button">Маркетинг</button></li>
+            <li class="buttons-item"><button class="content-button" type="button">Все</button></li>
+            <li class="buttons-item"><button class="content-button" type="button">Веб-сайти</button></li>
+            <li class="buttons-item"><button class="content-button" type="button">Додатки</button></li>
+            <li class="buttons-item"><button class="content-button" type="button">Дизайн</button></li>
+            <li class="buttons-item"><button class="content-button" type="button">Маркетинг</button></li>
             </ul>
             <h1 class="our-works-header">Умовний заголовок наші роботи</h1>
             <ul class="our-works">
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/1.jpg" width="370" alt="веб сайт на ноутбуке">
                     <h3 class="our-works-subheader">Технокряк</h3>
                     <p class="our-works-text">Веб-сайт</p>
                 </li>
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/2.jpg" width="370" alt="постер баскетболистов">
                     <h3 class="our-works-subheader">Постер New Orlean vs Golden Star</h3>
                     <p class="our-works-text">Дизайн</p>
                 </li>
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/3.jpg" width="370" alt="логотип ресторана">
                     <h3 class="our-works-subheader">Ресторан Seafood</h3>
                     <p class="our-works-text">Додаток</p>
                 </li>
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/4.jpg" width="370" alt="навушники">
                     <h3 class="our-works-subheader">Проект Prime</h3>
                     <p class="our-works-text">Маркетинг</p>
                 </li>
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/5.jpg" width="370" alt="коробки">
                     <h3 class="our-works-subheader">Проект Boxes</h3>
                     <p class="our-works-text">Додаток</p>
                 </li>
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/6.jpg" width="370" alt="монітор">
                     <h3 class="our-works-subheader">Inspiration has no Borders</h3>
                     <p class="our-works-text">Веб-сайт</p>
                 </li>
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/7.jpg" width="370" alt="книга">
                     <h3 class="our-works-subheader">Издание Limited Edition</h3>
                     <p class="our-works-text">Дизайн</p>
                 </li>
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/8.jpg" width="370" alt="етикетка">
                     <h3 class="our-works-subheader">Проект LAB</h3>
                     <p class="our-works-text">Маркетинг</p>
                 </li>
-                <li>
+                <li class="our-works-item">
                     <img src="./images/projects/9.jpg" width="370" alt="ноутбук">
+
                     <h3 class="our-works-subheader">Growing Business</h3>
                     <p class="our-works-text">Додаток</p>
+
                 </li>
             </ul>
 
@@ -99,16 +106,17 @@
     <footer class="footer">
         <a class="logo-footer" href="/"><span class="web">Web</span>studio</a>
         <address>
-            <ul>
-                <li><a class="link-contacts" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li> <a class="link-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="contacts-footer">
+                <li class="link-contacts-footer-item"><a class="link-contacts-footer" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="link-contacts-footer-item"> <a class="link-contacts-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li>
-                 <a class="link-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="link-contacts-footer-item">
+                 <a class="link-contacts-footer" href="tel:+380961111111">+38 096 111 11 11</a>
                  </li>
              </ul>
         </address>
     </footer>
+</div>
 
 </body>
 </html>
