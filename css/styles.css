@@ -8,8 +8,31 @@
     --border-color: rgba(236, 236, 236, 1);
     --body-bgd: rgba(255, 255, 255, 1);
 }
+/* system */
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+.a {
+	text-decoration: none;
+	color: inherit;
+}
+/* Свойства для корректного отображения картинок */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* Свойства для обнуления курсива у address */
+address {
+	font-style: normal;
+}
 body{
-    font-family: 'Roboto', 'Raleway' sans-serif;
+    font-family: 'Roboto',  sans-serif;
     background-color: var(--body-bgd);
 }
 ul{
@@ -43,6 +66,20 @@ p{
     padding-right: 15px;
 
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  /* header */
 .header{
     /* max-width: 1600px; */
     border-bottom: 1px solid var(--border-color) ;
@@ -77,8 +114,7 @@ p{
 .navigation .link{
 
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 .link{
     font-family: 'Roboto', sans-serif;
@@ -102,8 +138,7 @@ p{
     letter-spacing: 0.02em;
     color: var(--info-text-color);
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+   
 }
 .link-contacts:hover{
     color: var(--accent);
@@ -143,17 +178,18 @@ p{
 .header-navigation{
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    
 }
 
 .main-order{
     background-color: var(--bgd-color);
     text-align: center;
+    padding: 200px;
 
 }
 .main-header{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -161,14 +197,13 @@ p{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
-    padding-top: 200px;
     margin: 0 auto;
-    width: 50%;
+    width: 693px;
 
 }
 .order-button{
     display: inline-block;
-
+    border: none;
     background-color: var(--accent);
     color: rgba(255, 255, 255, 1);
     width: 200px;
@@ -181,7 +216,6 @@ p{
     line-height: 1.9;
     letter-spacing: 0.06em;
     text-align: center;
-    margin-bottom: 200px;
     margin-top: 30px;
 }
 .order-button:hover{
@@ -193,14 +227,13 @@ p{
 }
 .benefits-item{
     align-items: center;
+    width: 270px;
 
 }
 .benefits-item:not(:last-child){
     margin-right: 30px;
 }
-.benefits-header{
-    display: none;
-}
+
 
 .benefits-sub-header{
     font-family: 'Roboto', sans-serif;
@@ -222,6 +255,9 @@ p{
     color: var(--info-text-color);
     margin-top: 10px;
 }
+.what-we-do{
+    padding-top: 0;
+}
 .what-we-do > ul{
     display: flex;
 }
@@ -230,9 +266,7 @@ p{
 
 }
 .what-we-do-header{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
@@ -243,21 +277,22 @@ p{
 }
 .our-team{
 
-    background-color: var(--bgd-secondary-color)
+    background-color: var(--bgd-secondary-color);
+    padding-top: 0;
 
 }
 .team-header{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-text-color);
+    margin-bottom: 50px;
     padding-top: 94px;
-    padding-bottom: 50px;
+    
+    
 }
 .our-team-sub-header{
     display: block;
@@ -270,7 +305,7 @@ p{
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-top: 30px;
-    padding-bottom: 10px;
+    
 }
 .our-team-text{
     display: block;
@@ -282,6 +317,7 @@ p{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--info-text-color);
+    padding-top: 10px;
 
 }
 .our-team-list{
@@ -317,13 +353,29 @@ p{
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+    
+}
+.content-button{
+    border-radius: 4px;
 }
 .buttons-item:not(:last-child){
     margin-right: 8px;
 }
+
+.content-button .current{
+    color: var(--hover-button-color);
+    background-color: var(--accent);
+    border-radius: 4px; 
+}
 .buttons :hover{
     color: var(--hover-button-color);
     background-color: var(--accent);
+    border-radius: 4px;   
+}
+.buttons :focus{
+    color: var(--hover-button-color);
+    background-color: var(--accent);
+    border-radius: 4px;   
 }
 .our-works-header{
     display: none;
@@ -382,6 +434,7 @@ p{
 
 .footer{
     background-color: rgba(47, 48, 58, 1);
+    
 
 
 }
@@ -395,12 +448,12 @@ p{
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    
 }
-.contacts-footer{
-    padding-bottom: 60px;
-}
+
+
 .link-contacts-footer{
     display: inline-block;
     font-family: 'Roboto', sans-serif;
@@ -432,4 +485,7 @@ p{
 }
 .link-contacts-footer:focus{
     color: var(--accent);
+}
+address{
+    padding-bottom: 60px;
 }
