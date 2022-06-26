@@ -2,6 +2,15 @@
     --title-text-color: rgba(33, 33, 33, 1);
     --accent: rgba(33, 150, 243, 1);
     --info-text-color: rgba(117, 117, 117, 1);
+    --bgd-color: rgba(47, 48, 58, 1);
+    --bgd-secondary-color: rgba(245, 244, 250, 1);
+    --hover-button-color: rgba(255, 255, 255, 1);
+    --border-color: rgba(236, 236, 236, 1);
+    --body-bgd: rgba(255, 255, 255, 1);
+}
+body{
+    font-family: 'Roboto', 'Raleway' sans-serif;
+    background-color: var(--body-bgd);
 }
 ul{
     list-style-type: none;
@@ -22,15 +31,22 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container{
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 
 }
 .header{
-    border-bottom: 1px solid rgba(236, 236, 236, 1);
+    /* max-width: 1600px; */
+    border-bottom: 1px solid var(--border-color) ;
+    margin: 0 auto;
 }
 
 .nav{
@@ -74,10 +90,7 @@ p{
     text-decoration: none;
     color: var(--title-text-color);
 
-
 }
-
-
 
 .link-contacts{
     font-family: 'Roboto', sans-serif;
@@ -119,12 +132,7 @@ p{
 
 .contacts{
     display: flex;
-
-    margin-left: 331px;
-
-
-
-
+    margin-left: auto;
 }
 .contacts .item{
     margin-right: 50px;
@@ -132,19 +140,15 @@ p{
 .contacts .item:last-child{
     margin-right: 0;
 }
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-
+.header-navigation{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
-
-.main-backgroung{
-
+.main-order{
+    background-color: var(--bgd-color);
     text-align: center;
-    background-color: rgba(47, 48, 58, 1);
-
 
 }
 .main-header{
@@ -216,6 +220,7 @@ p{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--info-text-color);
+    margin-top: 10px;
 }
 .what-we-do > ul{
     display: flex;
@@ -237,9 +242,8 @@ p{
     margin-top: 0;
 }
 .our-team{
-    width: 100%;
-    height: 648px;
-    background-color: rgba(245, 244, 250, 1);
+
+    background-color: var(--bgd-secondary-color)
 
 }
 .team-header{
@@ -280,7 +284,7 @@ p{
     color: var(--info-text-color);
 
 }
-.our-team > ul{
+.our-team-list{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,11 +307,10 @@ p{
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    background-color: rgba(245, 244, 250, 1);
+    background-color: var(--bgd-secondary-color);
     color: var(--title-text-color);
     border: none;
-    width: 145px;
-    height: 38px;
+    padding: 6px 22px 6px 22px;
 
 }
 .buttons{
@@ -319,7 +322,7 @@ p{
     margin-right: 8px;
 }
 .buttons :hover{
-    color: rgba(255, 255, 255, 1);
+    color: var(--hover-button-color);
     background-color: var(--accent);
 }
 .our-works-header{
@@ -410,9 +413,23 @@ p{
     color: var(--info-text-color);
 
 }
+.link-addres-footer{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
 .link-contacts-footer-item:not(:last-child){
     margin-bottom: 9px;
 }
 .link-contacts-footer:hover{
+    color: var(--accent);
+}
+.link-contacts-footer:focus{
     color: var(--accent);
 }

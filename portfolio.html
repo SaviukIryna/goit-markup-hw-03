@@ -5,25 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?&family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 <body>
-    <div class="container">
+
     <header class="header">
-        <div class="nav">
-        <a class="logo" href="/"><span class="web">Web</span>studio</a>
-        <nav>
+        <div class="container header-navigation">
+        <nav class="nav">
+            <a class="logo" href="/"><span class="web">Web</span>studio</a>
             <ul class="navigation">
                 <li class="item"><a class="link" href="index.html">Студія</a></li>
                 <li class="item"><a class="link current" href="portfolio.html">Портфоліо</a></li>
@@ -37,10 +31,11 @@
             <a class="link-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
-    </div>
+        </div>
     </header>
     <main>
         <section class="section">
+            <div class="container">
             <ul class="buttons">
             <li class="buttons-item"><button class="content-button" type="button">Все</button></li>
             <li class="buttons-item"><button class="content-button" type="button">Веб-сайти</button></li>
@@ -98,16 +93,17 @@
 
                 </li>
             </ul>
-
+        </div>
         </section>
 
     </main>
 
     <footer class="footer">
+        <div class="container">
         <a class="logo-footer" href="/"><span class="web">Web</span>studio</a>
         <address>
             <ul class="contacts-footer">
-                <li class="link-contacts-footer-item"><a class="link-contacts-footer" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="link-contacts-footer-item"><a class="link-addres-footer" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
                 <li class="link-contacts-footer-item"> <a class="link-contacts-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="link-contacts-footer-item">
@@ -115,8 +111,9 @@
                  </li>
              </ul>
         </address>
+    </div>
     </footer>
-</div>
+
 
 </body>
 </html>
