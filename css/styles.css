@@ -104,8 +104,8 @@ p{
     letter-spacing: 0.03em;
     margin-top: 0;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     }
 .web{
@@ -184,7 +184,7 @@ p{
 .main-order{
     background-color: var(--bgd-color);
     text-align: center;
-    padding: 200px;
+    padding: 200px 0;
 
 }
 .main-header{
@@ -198,7 +198,7 @@ p{
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     margin: 0 auto;
-    width: 693px;
+    width: 600px;
 
 }
 .order-button{
@@ -278,7 +278,7 @@ p{
 .our-team{
 
     background-color: var(--bgd-secondary-color);
-    padding-top: 0;
+    
 
 }
 .team-header{
@@ -290,7 +290,7 @@ p{
     text-align: center;
     color: var(--title-text-color);
     margin-bottom: 50px;
-    padding-top: 94px;
+    
     
     
 }
@@ -304,7 +304,7 @@ p{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-top: 30px;
+    padding-top: 30px;
     
 }
 .our-team-text{
@@ -317,7 +317,7 @@ p{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--info-text-color);
-    padding-top: 10px;
+    margin-top: 10px;
 
 }
 .our-team-list{
@@ -434,6 +434,7 @@ p{
 
 .footer{
     background-color: rgba(47, 48, 58, 1);
+    padding: 60px 0;
     
 
 
@@ -448,7 +449,6 @@ p{
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-top: 60px;
     margin-bottom: 20px;
     
 }
@@ -486,6 +486,4 @@ p{
 .link-contacts-footer:focus{
     color: var(--accent);
 }
-address{
-    padding-bottom: 60px;
-}
+
